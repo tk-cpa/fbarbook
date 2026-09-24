@@ -1,0 +1,245 @@
+/* FBAR for Hipsters -- shared stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#faf5ec;
+  --paper:#fffdf8;
+  --ink:#201c16;
+  --ink-soft:#4a4438;
+  --accent:#d9643a;
+  --accent-dark:#b74f2b;
+  --sage:#3e6259;
+  --line:#e4dcc9;
+  --law-bg:#f1ece0;
+  --max:720px;
+}
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{color:var(--accent-dark);text-decoration-thickness:1px;}
+a:hover{color:var(--accent);}
+
+h1,h2,h3,.display{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:700;
+  line-height:1.15;
+  color:var(--ink);
+}
+
+.site-header{
+  border-bottom:1px solid var(--line);
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  max-width:calc(var(--max) + 48px);
+  margin:0 auto;
+}
+
+.site-header .brand{
+  font-family:'Fraunces',serif;
+  font-weight:700;
+  font-size:1.05rem;
+  text-decoration:none;
+  color:var(--ink);
+  letter-spacing:.01em;
+}
+
+.site-header .brand span{color:var(--accent);}
+
+.site-header nav a{
+  font-size:.85rem;
+  color:var(--ink-soft);
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:600;
+}
+
+.site-header nav a:hover{color:var(--accent-dark);}
+
+main.page{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:40px 24px 24px;
+  animation:turnIn .55s cubic-bezier(.2,.7,.3,1) both;
+  transform-style:preserve-3d;
+  perspective:1400px;
+}
+
+@keyframes turnIn{
+  from{opacity:0; transform:rotateY(-6deg) translateX(-18px);}
+  to{opacity:1; transform:none;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  main.page{animation:none;}
+}
+
+.kicker{
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.72rem;
+  font-weight:700;
+  color:var(--sage);
+  margin:0 0 8px;
+}
+
+h1.title{font-size:2.1rem;margin:0 0 6px;}
+.subtitle{color:var(--ink-soft);font-size:1.02rem;margin:0 0 28px;}
+
+.illo{
+  border:1.5px dashed #c9bd9d;
+  background:repeating-linear-gradient(135deg,#f3ede0,#f3ede0 10px,#ece4d2 10px,#ece4d2 20px);
+  border-radius:10px;
+  min-height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px;
+  margin:0 0 30px;
+}
+
+.illo span{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  color:#8a7f66;
+  font-size:.92rem;
+  max-width:340px;
+}
+
+.story p{margin:0 0 18px;}
+.story p:first-of-type::first-letter{
+  font-family:'Fraunces',serif;
+  font-weight:700;
+  font-size:2.6rem;
+  float:left;
+  line-height:.85;
+  padding:6px 8px 0 0;
+  color:var(--accent-dark);
+}
+
+.callout{
+  background:var(--law-bg);
+  border-left:4px solid var(--sage);
+  border-radius:6px;
+  padding:18px 20px;
+  margin:26px 0;
+}
+
+.callout.law{border-left-color:var(--sage);}
+.callout.flag{border-left-color:var(--accent);background:#fbeee5;}
+.callout.bottom{border-left-color:var(--ink);background:#efe9db;}
+
+.callout h3{
+  font-family:'Inter',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.75rem;
+  font-weight:700;
+  margin:0 0 10px;
+  color:var(--ink-soft);
+}
+
+.callout ul{margin:8px 0 0;padding-left:20px;}
+.callout li{margin:0 0 8px;}
+.callout p{margin:0 0 10px;}
+.callout p:last-child{margin-bottom:0;}
+.cite{font-size:.86rem;color:var(--ink-soft);}
+
+.pagenav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:44px;
+  padding-top:22px;
+  border-top:1px solid var(--line);
+  gap:12px;
+}
+
+.pagenav a{
+  text-decoration:none;
+  font-weight:600;
+  font-size:.92rem;
+  color:var(--ink);
+  border:1.5px solid var(--line);
+  border-radius:8px;
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  max-width:44%;
+  transition:border-color .15s, transform .15s;
+}
+
+.pagenav a:hover{border-color:var(--accent);transform:translateY(-1px);}
+.pagenav a.next{margin-left:auto;text-align:right;flex-direction:row-reverse;}
+.pagenav .arrow{color:var(--accent-dark);font-size:1.1rem;}
+.pagenav .toc-link{border:none;color:var(--ink-soft);font-weight:600;}
+
+.site-footer{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:30px 24px 60px;
+  font-size:.8rem;
+  color:var(--ink-soft);
+}
+
+.site-footer .disclaimer{
+  border-top:1px solid var(--line);
+  padding-top:16px;
+  margin-top:8px;
+}
+
+/* index / TOC page */
+.cover{
+  text-align:center;
+  padding:60px 24px 30px;
+}
+.cover .kicker{justify-content:center;}
+.cover h1{font-size:2.7rem;margin:8px 0 14px;}
+.cover p.lede{color:var(--ink-soft);max-width:520px;margin:0 auto 30px;font-size:1.05rem;}
+
+.toc{
+  list-style:none;
+  margin:0 auto 40px;
+  padding:0;
+  max-width:var(--max);
+}
+.toc li{
+  border:1px solid var(--line);
+  border-radius:10px;
+  margin-bottom:12px;
+  background:var(--paper);
+}
+.toc a{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:16px 18px;
+  text-decoration:none;
+  color:var(--ink);
+}
+.toc a:hover{border-color:var(--accent);}
+.toc .num{
+  font-family:'Fraunces',serif;
+  font-weight:700;
+  color:var(--accent-dark);
+  font-size:1.3rem;
+  min-width:28px;
+}
+.toc .t-title{font-weight:600;display:block;}
+.toc .t-desc{color:var(--ink-soft);font-size:.85rem;display:block;margin-top:2px;}

@@ -1,0 +1,18 @@
+# FBAR for Hipsters
+
+> A story-driven guide to the Report of Foreign Bank and Financial Accounts (FinCEN Form 114), told through the story of Hipster, an American expat entrepreneur with a personal foreign account, signature authority over his company's foreign account, a foreign crypto exchange account, and a joint account with a non-US-citizen partner.
+
+FBAR for Hipsters covers who must file (31 U.S.C. 5314; 31 CFR 1010.350), the $10,000 aggregate threshold, signature authority versus financial interest, the current unsettled status of foreign crypto accounts under FinCEN Notice 2020-2, the spousal filing exception under 31 CFR 1010.350(g) and why it does not extend to unmarried joint owners, how and when to file (BSA E-Filing System, April 15 due date with automatic extension to October 15), and civil/criminal penalties under 31 U.S.C. 5321 and 5322.
+
+## Chapters
+
+- [Meet Hipster](https://fbarbook.com/01-meet-hipster.html): who must file an FBAR and why
+- [The Account With His Own Name On It](https://fbarbook.com/02-personal-account.html): personal foreign bank account, financial interest
+- [The Company Account He Can Move Money From](https://fbarbook.com/03-signature-authority.html): signature authority over a foreign company account
+- [The Crypto Exchange Account](https://fbarbook.com/04-crypto-account.html): foreign virtual currency accounts, FinCEN Notice 2020-2
+- [The Joint Account With the Girlfriend](https://fbarbook.com/05-joint-account.html): joint accounts, the spousal filing exception
+- [Actually Filing the Thing](https://fbarbook.com/06-filing-the-fbar.html): BSA E-Filing System, deadlines, extension
+- [What Happens If He Doesn't](https://fbarbook.com/07-penalties.html): non-willful and willful penalties, reasonable cause
+- [What's Next](https://fbarbook.com/08-whats-next.html): series continuity, gifts from abroad and Form 3520
+
+This is general educational content, not tax or legal advice for any individual's specific facts.
