@@ -121,6 +121,20 @@ h1.title{font-size:2.1rem;margin:0 0 6px;}
   max-width:340px;
 }
 
+.illo.has-img{
+  padding:0;
+  overflow:hidden;
+  background:none;
+}
+
+.illo.has-img img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  min-height:220px;
+}
+
 .story p{margin:0 0 18px;}
 .story p:first-of-type::first-letter{
   font-family:'Fraunces',serif;
