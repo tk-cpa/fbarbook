@@ -266,3 +266,9 @@ h1.title{font-size:2.1rem;margin:0 0 6px;}
 }
 .toc .t-title{font-weight:600;display:block;}
 .toc .t-desc{color:var(--ink-soft);font-size:.85rem;display:block;margin-top:2px;}
+
+.cmp-wrap{overflow-x:auto;margin:0 0 26px;}
+.cmp{width:100%;border-collapse:collapse;font-size:.93rem;background:var(--paper);}
+.cmp th,.cmp td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+.cmp th{background:var(--law-bg);font-family:'Fraunces',serif;font-size:.9rem;}
+.cmp td:first-child{font-weight:600;}
